@@ -1,0 +1,105 @@
+Evolution AI questions 
+
+
+How does your zero-shot learning differ from other IDP platforms in terms of speed and accuracy for new document types?
+
+Can the self-learning feature be disabled or limited for sensitive use cases where manual verification is mandatory?
+
+How does the system handle low-quality scans or images with noise?
+
+What is the maximum document size or page limit for processing?
+
+Does the AI support multilingual document extraction?
+
+What types of automated anomaly detection are available beyond time series checks?
+
+
+----------------------------------------------------------------------------------
+What types of automated anomaly detection are available beyond time series checks?
+📌 Basis for asking:
+
+In the documentation, Evolution AI mentions “time series analysis” as an example of anomaly detection.
+
+This is only one method, but in real-world scenarios, there could be other types of anomalies — e.g., outliers in numerical fields, pattern mismatches, duplicate entries, inconsistent units.
+
+Knowing all the anomaly detection methods helps assess whether the platform can catch different error types relevant to your business data.
+
+🎯 Purpose: To understand how robust their error-detection framework is, especially for non-time-series data.
+
+2️⃣ How does the system handle nested or irregular tables compared to traditional tabular layouts?
+📌 Basis for asking:
+
+The product claims “complex table extraction, including nested tables and tables spanning multiple pages.”
+
+Nested tables (tables within tables) and irregular layouts (merged cells, inconsistent rows) are common in financial and legal documents, but can be a major challenge for OCR/IDP tools.
+
+You want to know how well the algorithm parses and maps such data to structured output.
+
+🎯 Purpose: To verify if the claimed table extraction capabilities hold up in messy, real-world documents.
+
+3️⃣ Can confidence thresholds be set differently for different document types or fields?
+📌 Basis for asking:
+
+The documentation states “flag extracted data points whose confidence score falls below the confidence threshold” but doesn’t say if it can be customised by document type or by individual field.
+
+For example, an invoice might require 100% confidence for payment amount, but you might tolerate 90% confidence for a supplier’s address.
+
+Having granular control allows you to optimise the QA process and avoid over-checking non-critical data.
+
+🎯 Purpose: To evaluate flexibility in quality control, which directly impacts manual workload and processing time.
+
+4️⃣ What is the typical accuracy range for untrained document types?
+📌 Basis for asking:
+
+The company mentions “90% accuracy after 25 documents, 98% after 200 documents”, but this assumes some training/correction has occurred.
+
+Zero-shot learning means you should get some accuracy even without training, but they haven’t stated what that baseline accuracy looks like.
+
+This is crucial to estimate performance on day one before the self-learning has had time to adapt.
+
+🎯 Purpose: To set realistic expectations for performance in initial deployment without large amounts of training data.
+
+
+What is the typical integration timeline for REST API or SFTP?
+📌 Basis for asking:
+
+The documentation states Evolution AI offers flexible integration via REST API or SFTP for uploading documents and sending outputs.
+
+It does not specify how long integration usually takes or the complexity involved for different IT environments.
+
+Integration time can vary depending on authentication, file formats, API complexity, and company infrastructure.
+
+🎯 Purpose: To understand the effort and timeline required before the system can be operational in your existing environment — critical for project planning.
+
+2️⃣ Can the solution integrate directly into ERP systems without Workato?
+📌 Basis for asking:
+
+They mention Workato integration with 1,000+ platforms, including ERP and accounting systems.
+
+However, Workato is a middleware; it may introduce extra cost, latency, or dependency.
+
+Some companies prefer direct API-to-ERP integration for efficiency and security.
+
+🎯 Purpose: To check if direct integration is possible and avoid unnecessary middleware if not required.
+
+3️⃣ How is data mapping handled for custom business logic in post-processing?
+📌 Basis for asking:
+
+Evolution AI offers custom post-processing rules (e.g., standardised dates, currency splitting, inferred fields).
+
+It’s unclear how these rules are implemented — whether through a visual UI, scripts, or developer involvement.
+
+Data mapping for business logic is critical if the extracted fields must match existing ERP/BI schemas.
+
+🎯 Purpose: To assess flexibility in aligning extracted data with your existing workflows and whether it requires technical resources or can be done by business users.
+
+4️⃣ Is there an on-premise deployment option for data-sensitive environments?
+📌 Basis for asking:
+
+Documentation talks about API/SaaS-style integration but does not confirm if the platform can be hosted on-premise.
+
+For industries like finance, healthcare, or government, local hosting is often mandatory due to compliance and data residency laws.
+
+🎯 Purpose: To determine if the solution can meet strict security and compliance requirements without relying on cloud hosting.
+
+----------------------------------------------------------------------
